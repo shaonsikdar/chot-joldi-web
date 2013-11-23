@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'pgsql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -65,10 +65,10 @@ return array(
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',
-			'host'     => 'localhost',
-			'database' => 'database',
-			'username' => 'root',
-			'password' => '',
+			'host'     => '10.0.239.8',
+			'database' => 'chot-joldi',
+			'username' => 'galaxy',
+			'password' => 'galaxy321',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',
