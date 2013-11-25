@@ -5,6 +5,16 @@ use Illuminate\Auth\Reminders\RemindableInterface;
 
 class User extends Eloquent implements UserInterface, RemindableInterface {
 
+	public static $rules = array(
+	   'firstname'=>'required|alpha|min:2',
+	   'lastname'=>'required|alpha|min:2',
+	   'email'=>'required|email|unique:users',
+	   'mobile'=>'required|alpha_num|size:11',
+	   'password'=>'required|alpha_num|between:6,12|confirmed',
+	   'password_confirmation'=>'required|alpha_num|between:6,12'
+	   );
+
+
 	/**
 	 * The database table used by the model.
 	 *
