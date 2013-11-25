@@ -65,7 +65,7 @@ return array(
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',
-			'host'     => '10.0.0.71',
+			'host'     => '10.0.239.6',
 			'database' => 'chot-joldi',
 			'username' => 'galaxy',
 			'password' => 'galaxy321',
