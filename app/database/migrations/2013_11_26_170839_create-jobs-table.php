@@ -18,9 +18,9 @@ class CreateJobsTable extends Migration {
 		   	$table->time('pickup_time');
 		   	$table->text('drop_point');
 		   	$table->time('drop_time');
-		   	$table->integer('distance');
+		   	$table->integer('distance')->nullable();
 		   	$table->integer('respect_amount');
-		   	$table->text('comments');
+		   	$table->text('comments')->nullable();
 		   	$table->timestamps();
 		   });
 	}
